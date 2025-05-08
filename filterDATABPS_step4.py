@@ -44,7 +44,7 @@ def map_sector_and_salary(jurusan):
     return "Sektor Tidak Diketahui", 0
 
 # Load semua sheet dari file hasil sebelumnya
-xls = pd.read_excel("daftar_jurusan_ips_per_ptn_keywords.xlsx", sheet_name=None)  # None = semua sheet
+xls = pd.read_excel("excel/daftar_jurusan_ips_per_ptn_keywords.xlsx", sheet_name=None)  # None = semua sheet
 df = pd.concat(xls.values(), ignore_index=True)  # Gabungkan semua sheet jadi satu DataFrame
 
 # Pastikan kolom nama jurusan huruf kapital

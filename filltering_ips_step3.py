@@ -3,7 +3,7 @@ import re
 import os
 
 # Load data dari scraping sebelumnya
-df = pd.read_excel("data_prodi_ptn_all.xlsx")
+df = pd.read_excel("excel/data_prodi_ptn_all.xlsx")
 
 # Pastikan nama jurusan huruf kapital
 df["NAMA"] = df["NAMA"].astype(str).str.upper()
